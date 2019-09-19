@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .blue-circle {
+            width:50px;
+            height:50px;
+            border-radius: 50px;
+            font-size: 50px;
+            text-align: center;
+            background: lightblue;
+            transition-property: border-radius, background, color, width, height, font-size;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s, 1s;
+        }
+        .blue-circle:hover{
+            border-radius: 0;
+            background: black;
+            color: white;
+            width: 1000px;
+            height: 1000px;
+            font-size: 1000px;
+        }
+
+        .traffic_light{
+            height: 90px;
+            width: 30px;
+            background: gray;
+            position: relative;
+        }
+
+        .circle{
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition-property: background;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s;
+        }
+
+        @keyframes animate-it {
+            0%{top: 0}
+            33%{top: 0}
+            66%{top: 30px}
+            100%{top: 60px}
+        }
+        .traffic_light:hover .circle{
+            animation: animate-it 3s linear infinite alternate;
+            background: yellow;
+        }
+        .traffic_light:active .circle{
+            animation-play-state: paused;
+        }
+
+        a:after {
+            color: gray;
+            content: " (" attr(href) ")";
+        }
+
+
+        p:after{
+            color: red;
+            content: attr(class);
+        }
+        p:first-letter{
+            color: yellow;
+        }
+
+        p::selection{
+            color: #00FF00;
+        }
+    </style>
+</head>
+<body>
+<audio src="ex.html" controls></audio>
+<p><a href="ex.html" download>download</a></p>
+<video controls>
+    <source src="ex.html" type="video/mp4">
+</video>
+<div class="blue-circle">1</div>
+<br>
+<div class="traffic_light">
+    <div class="circle">
+    </div>
+</div>
+<a href="http://google.com/">Search</a>
+<p class="*">Required</p>
+<p class="aba">Required</p>
+</body>
+</html>
