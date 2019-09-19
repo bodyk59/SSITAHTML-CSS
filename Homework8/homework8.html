@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+
+    <link rel="stylesheet" href="text.css" />
+    <link rel="stylesheet" href="960.css" />
+    <style>
+        html, body{font-family: Avenir, sans-serif}
+        h1{text-align: center; font-size: 20px}
+        legend{font-weight: bold; font-size: 15px}
+        p{font-size: 12px}
+        textarea{height: 70px}
+        span, #alert{color: red}
+        input#submit, input#cancel{width: 94px; height: 30px}
+    </style>
+</head>
+<body>
+    <form class="container_12">
+        <h1 class="grid_3 prefix_2">Registration form</h1>
+        <div class="clear"></div>
+        <fieldset class="grid_6">
+            <legend>Name</legend>
+            <p><label for="name" class="grid_2">Name<span>*</span></label><input type="text" id="name" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="surname" class="grid_2">Surname<span>*</span></label><input type="text" id="surname" class="grid_3"></p>
+            <div class="clear"></div>
+        </fieldset>
+        <div class="clear"></div>
+
+        <fieldset class="grid_6">
+            <legend>Address</legend>
+            <p><label for="country" class="grid_2">Country<span>*</span></label>
+                <select id="country" class="grid_3">
+                <option value="none" selected >None</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Canada">Canada</option>
+                <option value="The UK">The UK</option>
+                <option value="The USA">The USA</option>
+                </select>
+            </p>
+            <div class="clear"></div>
+            <p><label for="city" class="grid_2">City<span>*</span></label><input type="text" id="city" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="street" class="grid_2">Street<span>*</span></label><input type="text" id="street" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="house" class="grid_2">House<span>*</span></label><input type="text" id="house" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="flat" class="grid_2">Flat</label><input type="text" id="flat" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="postalCode" class="grid_2">Postal code<span>*</span></label><input type="text" id="postalCode" class="grid_3"></p>
+            <div class="clear"></div>
+        </fieldset>
+        <div class="clear"></div>
+
+        <fieldset class="grid_6">
+            <legend>Additional information</legend>
+            <p><label for="annualIncome" class="grid_2">Annual income</label><select id="annualIncome" class="grid_3">>
+                <option value="0 - 4 999" selected >0 - 4 999</option>
+                <option value="5 000 - 9 999">5 000 - 9 999</option>
+                <option value="10 000 - 14 999">10 000 - 14 999</option>
+                <option value="15 000 - 19 999">15 000 - 19 999</option>
+                <option value="20 000 - 24 999">20 000 - 24 999</option>
+                <option value="25 000 - 30 000">25 000 - 30 000</option>
+            </select></p>
+            <div class="clear"></div>
+            <p><label for="phoneNumber" class="grid_2">Phone number</label><input type="text" id="phoneNumber" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="dateOfBirth" class="grid_2">Date of birth</label><input type="date" id="dateOfBirth" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="email" class="grid_2">Email</label><input type="text" id="email" class="grid_3"></p>
+            <div class="clear"></div>
+            <p><label for="comments" class="grid_2">Comments</label><textarea id="comments" class="grid_3"></textarea></p>
+        </fieldset>
+        <div class="clear"></div>
+        <p id="alert">* Required field</p>
+        <div class="clear"></div>
+
+        <div class="grid_1 prefix_3 suffix_1">
+        <p >
+            <input id="submit" type="submit" value="Submit" >
+        </p>
+        </div>
+        <div class="grid_1">
+            <p>
+                <input id="cancel" type="submit" value="Cancel">
+            </p>
+        </div>
+    </form>
+</body>
+</html>
