@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>MindIT</title>
+    <!-- I kept it only to track my changes-->
+    <style>
+        .carousel-control-next-icon, .carousel-control-prev-icon{
+            height: 50px;
+            width: 50px;
+        }
+
+        #mind_it, #copyright{
+            font-size: 14px
+        }
+
+        #cloud_database_container{
+            background-color: #0a1939;
+            color: white;
+            font-size: 24px;
+        }
+
+        #copyright{
+            color: white;
+            background-color: #0a1939;
+        }
+
+        .card{
+            background-color: #0a1939;
+            color: white;
+        }
+
+        body{
+            background-color: #172e57;
+        }
+        .navbar{
+            background-color: #0a1939;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a href="#" class="navbar-brand">
+            <img src="resources/cloud-icon.png" alt="Cloud Logo" width="30" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#mind_it" class="nav-link">MindIT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#step1" class="nav-link">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#contactModal">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#downloadModal">Download</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0">
+                    Search
+                </button>
+            </form>
+        </div>
+    </nav>
+<!-- Cloud Employees Database-->
+    <div id="cloud_database_container" class="container-fluid">
+        <div class="d-flex justify-content-around">
+            <div class="m-3 cloud_database">Cloud</div>
+            <div class="m-3 cloud_database">Employees</div>
+            <div class="m-3 cloud_database">Database</div>
+        </div>
+    </div>
+<!-- Next block shows photo on main page-->
+    <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="resources/database-1.png" alt="Database Logo 1" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="resources/database-2.png" alt="Database Logo 2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="resources/database-3.png" alt="Database Logo 3" class="d-block w-100">
+                </div>
+                </div>
+            </div>
+        <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+<!-- Main container-->
+<!-- MindIT container-->
+<div class="container-fluid">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <div id="mind_it" class="card">
+                    <img src="resources/ProgramMainMenu.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">MindIT</h3>
+                        <p class="card-text">MindIT is a program to create and edit database of employees of your company. Use appropriate tools to add, update, delete or simply review your employees’ database. Create a report for official and personal needs.</p>
+                        <a href="#step1" class="btn btn-outline-success my-2 my-sm-0">Got it!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Documentation container-->
+<div class="container-fluid">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <div id="step1" class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Documentation</h3>
+                        <h4 class="card-title">Step 1</h4>
+                        <p class="card-text">To login into MindIT for the first time, type in “root” in Username field and Password field. For the next time, proceed with your Department name as Username and Surname as a Password.</p>
+                        <a href="#step2" class="btn btn-outline-success my-2 my-sm-0">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <div id="step2" class="card">
+                    <img src="resources/MainFolder.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Step 2</h4>
+                        <p class="card-text">All necessary files are to be found in JavaProjectFXOOP folder.</p>
+                        <a href="#step3" class="btn btn-outline-success my-2 my-sm-0">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <div id="step3" class="card">
+                    <img src="resources/LibFolder.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Step 3</h4>
+                        <p class="card-text">All plugins for successful operation including PostgreSQL Driver, ITEXT and JavaFX SDK 11.0.2 are stored in lib folder.</p>
+                        <a href="#step4" class="btn btn-outline-success my-2 my-sm-0">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col">
+                <div id="step4" class="card">
+                    <img src="resources/SourceFolder.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Step 4</h4>
+                        <p class="card-text">All source files packages are placed in employeeDatabase package.</p>
+                        <a href="#cloud_database_container" class="btn btn-outline-success my-2 my-sm-0">Finish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Copyright container-->
+    <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <div id="copyright">
+                Copyright 2019, MindIT. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+<!-- Contact modal window-->
+    <div class="modal fade bd-example-modal-sm" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact us</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="emailInput">Email</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We will respond to this email</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="questionInput">Question</label>
+                                <textarea type="email" class="form-control" id="questionInput" aria-describedby="questionHelp">
+                                </textarea>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    Subscribe for notifications
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Download modal window-->
+    <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agreement</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <p>By downloading or using this software or accompanying documentation you agree to the following terms and conditions.
+                       <br> <br>
+                        License Grant. <br>
+                        You are hereby granted a personal, non-transferable and non-sublicenseable, nonexclusive, world-wide, royalty free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the program examples and sample applications ("Sample Applications") and any such derivative works, in source code and object code form.  Except for the copyright license above, you are granted no other rights or licenses, by implication, or estoppel, or otherwise, under any patents or other intellectual property rights.
+                        <br> <br>
+                        No Warranties.<br>
+                        The Sample Applications contained herein are provided on an "AS IS" basis and to the maximum extent permitted by applicable law, this material is provided AS IS AND WITH ALL FAULTS, and the authors and developers of this material and WS-I hereby disclaim all other warranties and conditions, either express, implied or statutory, including, but not limited to, any (if any) implied warranties, duties or conditions of merchantability, of fitness for a particular purpose, of accuracy or completeness of responses, of results, of workmanlike effort, of lack of viruses, and of lack of negligence. ALSO, THERE IS NO WARRANTY OR CONDITION OF TITLE, QUIET ENJOYMENT, QUIET POSSESSION, CORRESPONDENCE TO DESCRIPTION OR NON-INFRINGEMENT WITH REGARD TO THIS MATERIAL.
+                        <br> <br>
+                        Limitation of Liability. <br>
+                        IN NO EVENT WILL ANY AUTHOR, DEVELOPER, LICENSOR, OR DISTRIBUTOR OF THIS MATERIAL OR WS-I BE LIABLE TO ANY OTHER PARTY FOR THE COST OF PROCURING SUBSTITUTE GOODS OR SERVICES, LOST PROFITS, LOSS OF USE, LOSS OF DATA, OR ANY INCIDENTAL, CONSEQUENTIAL, DIRECT, INDIRECT, PUNITIVE, OR SPECIAL DAMAGES WHETHER UNDER CONTRACT, TORT, WARRANTY, OR OTHERWISE, ARISING IN ANY WAY OUT OF THIS OR ANY OTHER AGREEMENT RELATING TO THIS MATERIAL, WHETHER OR NOT SUCH PARTY HAD ADVANCE NOTICE OF THE POSSIBILITY OF SUCH DAMAGES.
+                        <br> <br>
+                        Redistribution. <br>
+                        If you choose to distribute these Sample Applications or any derivative works thereof in a commercial product, you must defend and indemnify all authors, developers, licensors, and distributors (the "Indemnified Parties") of the Sample Applications against any losses, damages and costs arising from claims, lawsuits and other legal actions (excluding actions based on intellectual property infringement claims) brought by a third party against the Indemnified Parties to the extent caused by your acts or omissions in connection with your distribution.  Regardless of whether your distribution is a commercial product or not, the license under which you redistribute the Sample Applications or any derivative works thereof must:
+                        effectively disclaim on behalf of all authors, developers, licensors, and distributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;
+                        effectively exclude on behalf of all authors, developers, licensors, and distributors all liability for damages, including direct, indirect, special, punitive, incidental and consequential damages, such as lost profits;
+                        state that any provisions which differ from this license are offered by you alone and not by any other party; and
+                        require that the license under which any subsequent distribution of the Sample Applications or derivative works thereof is made satisfy the terms of this section.
+                        <br> <br>
+                        General. <br>
+                        No other rights are granted by implication, estoppel or otherwise.
+                        <br> <br>
+                        If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.
+                        <br> <br>
+                        Your rights under this Agreement shall terminate if you fail to comply with any of the material terms or conditions of this Agreement and do not cure such failure in a reasonable period of time after becoming aware of such noncompliance.  If all your rights under this Agreement terminate, you agree to cease use of the Sample Applications and any derivative works thereof immediately.
+                        <br>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary"> <a href="https://github.com/bodyk59/SSITAJavaCore/tree/MindIT" style="text-decoration: none; color: white">Agree</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
