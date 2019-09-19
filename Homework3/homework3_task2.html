@@ -1,0 +1,53 @@
+<!-- Browser: Safari Technology Preview 13.1 -->
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../reset.css">
+  <style type="text/css">
+    h1 { font: bold 30px/40px Avenir, Helvetica, sans-serif; text-align: center;}
+    h2 { font: bold 20px/60px Avenir, Helvetica, sans-serif; text-align: center;}
+    p { font: 15px/700px Avenir, Helvetica, sans-serif; text-align: center;}
+    div#main-block{background-color: aqua; min-height: 100%;}
+    div.news-block {
+      float: left;
+      width: 33.33%;
+      height: 100%;
+    }
+    div.news-block:hover{
+      cursor: pointer;
+    }
+    div#news-block-1:hover{
+      background-color: red;
+    }
+    div#news-block-2:hover{
+      background-color: yellow;
+    }
+    div#news-block-3:hover{
+      background-color: blue;
+    }
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div id="main-block">
+  <h1>Main header</h1>
+  <div id="news-block-1" class="news-block">
+    <h2>First header</h2>
+    <p>First text block</p>
+  </div>
+  <div id="news-block-2" class="news-block">
+    <h2>Second header</h2>
+    <p>Second text block</p>
+  </div>
+  <div id="news-block-3" class="news-block">
+    <h2>Third header</h2>
+    <p>Third text block</p>
+  </div>
+</div>
+</body>
+</html>
